@@ -1,0 +1,257 @@
+@font-face {
+    font-family: 'JakartaSans'; /* Choose a suitable name for your font */
+    src: local('JakartaSans'), url('Resources/Plus_Jakarta_Sans/PlusJakartaSans-VariableFont_wght.ttf');
+    /* Specify the correct path and format for your font file */
+  }
+
+  @font-face {
+    font-family: 'SpaceMono'; 
+    src: local('SpaceMono'), url('Resources/Space_Mono/SpaceMono-Regular.ttf');
+    font-weight: normal;
+  }
+
+  @font-face {
+    font-family: 'SpaceMono'; 
+    src: local('SpaceMono'), url('Resources/Space_Mono/SpaceMono-Bold.ttf');
+    font-weight: bold;
+  }
+
+/*     Blossom Pop up
+ */
+
+ .popup {
+    height: 270px;
+    width: 440px;
+    background-color: rgb(231, 231, 231);
+    position: absolute;
+    top: 325px; 
+    left: 300px;
+    padding: 0px 0px ;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: 2px ridge #d1d1d1;
+    filter: drop-shadow(0px 0px 6px #0000008e);
+ }
+
+ #gfrpopup {
+    height: 240px;
+    width: 400px;
+    top: 600px; 
+    left: 850px;
+ }
+
+ #n7popup {
+    height: 245px;
+    width: 400px;
+    top: 800px; 
+    left: 375px;
+ }
+
+ .popupbar {
+    background-color: #e7e7e7;
+    height: 125px;
+    width: 100%;
+    margin: 0px;
+    position: sticky;
+    top: 0px;
+
+
+ }
+
+ .blossompopup img {
+    padding:0px;
+    margin: 0px auto 0px auto;
+    width: 100%;
+    height: auto;
+ }
+
+ .closeout {
+    height: 12px;
+    width: 12px;
+    background-color: rgb(255, 88, 88);
+    border-radius: 100%;
+    margin: 4px 6px 6px ;
+    border: 0px solid;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0px;
+    font-weight: 900;
+    font-size: 8px;
+    font-family: arial;
+    color: rgb(255, 88, 88);
+    
+   
+    
+ }
+
+ .closeout:hover {
+    color: #450000;
+    cursor: url('cursor.cur'), auto;
+
+    
+ }
+
+
+main {
+    display: block;
+    width: 45%;  
+    margin: auto;
+}
+            
+h1 {
+    font-family: 'JakartaSans';
+    font-size: 28px;
+    margin: 12px 0px 12px 0px;
+}
+
+h2 {
+    font-family: 'JakartaSans';
+    color: #101010;
+    margin: 12px 0px;
+}
+
+h3 {
+    font-family: 'JakartaSans';
+    color: #101010;
+}
+
+h4 {
+    font-family: 'SpaceMono';
+    color: #5d5d5d;
+    font-weight: 400;
+}
+
+p {
+    font-family: 'SpaceMono';
+    font-size: 14px;
+    color: #5d5d5d;
+}
+
+.about {
+    font-weight: 300;
+    margin: 14px 0x 24px 0px;
+}
+
+header { 
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.flag {
+    height: 15px;
+    margin-left: 12px;
+}
+
+header h3 {
+    font-family: 'SpaceMono';
+    margin: 8px auto;
+    font-weight: 400;
+}
+
+.pfp {
+    height: 225px;
+    border-radius: 12px;
+    margin-left: auto;
+    
+}
+
+.contact {
+    display: flex;
+    list-style: none;
+    padding: 0px;
+    margin: 8px auto auto 0px;
+}
+
+.contact > li a{
+    margin-right: 16px;
+    font-family: 'SpaceMono';
+    color: blue;
+    font-weight: 700;
+    cursor: url('cursor.cur'), auto;
+}
+
+
+section {
+    grid-column: span 2;
+}
+
+
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+}
+
+.tags li {
+    padding: 6px;
+    font-size: 12px;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    margin: 3px 3px 3px 0px;
+    font-family: 'SpaceMono';
+    font-weight: 800;
+    background-color: #f3f4f6;
+}
+
+#skills {
+    padding: 6px;
+    font-size: 12px;
+    border: 0px solid #ccc;
+    border-radius: 8px;
+    margin: 3px 3px 3px 0px;
+    font-family: 'SpaceMono';
+    font-weight: bold;
+    background-color: #909090;
+    color: white;
+}
+
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.projects > div {
+    box-sizing: border-box; /* Include padding and border in the total width */
+    flex: 0 0 calc(50% - 20px); /* Set width to 50%, considering padding and margin */
+    padding: 15px;
+    font-size: 14px;
+    border: solid #ccc 1px;
+    border-radius: 12px;
+    margin: 5px;
+    
+}
+
+.projects > div > h1 {
+    font-size: 16px;
+}
+
+button {
+    font-size: 12px;
+    font-family: 'JakartaSans';
+    padding: 4px 6px;
+    
+}
+
+button:hover {
+    
+}
+
+footer {
+    width: 100%;
+    height: 200px;
+    background-color: #fcfcfc ;
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer p {
+    text-align: center;
+}
