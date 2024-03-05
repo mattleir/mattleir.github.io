@@ -33,6 +33,7 @@
     border-radius: 8px;
     border: 2px ridge #d1d1d1;
     filter: drop-shadow(0px 0px 6px #0000008e);
+    
  }
 
  #gfrpopup {
@@ -40,6 +41,7 @@
     width: 400px;
     top: 600px; 
     left: 850px;
+    
  }
 
  #n7popup {
@@ -47,6 +49,7 @@
     width: 400px;
     top: 800px; 
     left: 375px;
+    display: none;
  }
 
  .popupbar {
@@ -56,6 +59,7 @@
     margin: 0px;
     position: sticky;
     top: 0px;
+    
 
 
  }
@@ -238,9 +242,6 @@ button {
     
 }
 
-button:hover {
-    
-}
 
 footer {
     width: 100%;

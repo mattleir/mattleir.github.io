@@ -9,7 +9,7 @@
     <script src="script.js"></script>
 </head>
 <main>
-    <div class="popup" id="blossompopup">
+    <div style="display: none;" class="popup" id="blossompopup">
         <div class="popupbar"> 
             
             <button class="closeout" onclick="hidePopup('blossompopup','blosButton')">&#10005;</button>
@@ -34,7 +34,7 @@
 
 
 
-    <div class="popup" id="gfrpopup">
+    <div style="display: none;" class="popup" id="gfrpopup" >
         <div class="popupbar"> 
             
             <button class="closeout" onclick="hidePopup('gfrpopup','gfrButton')">&#10005;</button>
@@ -58,7 +58,7 @@
     </div>
 
 
-    <div class="popup" id="n7popup">
+    <div style="display: none;" class="popup" id="n7popup">
         <div class="popupbar"> 
             
             <button class="closeout" onclick="hidePopup('n7popup')">&#10005;</button>
@@ -117,11 +117,11 @@
         <section>
             <h2>Education</h2>
             <h3>Oregon State University</h3>
-            <h4>Bachelor's Degree in Design and Innovation Management</h4>
+            <h4>Design and Innovation Management B.A Candidate</h4>
                 <ul class="tags">
                     <li>Design Thinking</li>
                     <li>Design Management</li>
-                    <li>User Centered Design</li>
+                    <li>Human Centered Design</li>
                     <li>Market Research</li>
                     <li>UX Research</li>
                     <li>Iterative Prototyping</li>
@@ -161,32 +161,28 @@
         <section class="projects">
 
             <div>              
-                <h3>BA 260 Blossom Protein Pitch Deck</h3>
-                    <p>Mock pitch competition where I won 1st place against 54 other teams. The product I
-                        pitched was a CBD protein shake called, "The Melo Shake".
+                <h3>Blossom Protein Pitch Deck</h3>
+                    <p>Mock pitch deck for a pitch competition at my school. Won 1st place for $1,000 against 54 teams. 
                     </p>
-                    <button disabled ="blosButton"; onclick="unhidePopup('blossompopup','blosButton')";>View Project</button>
+                    <button id="blosButton"; onclick="unhidePopup('blossompopup','blosButton')";>View Project</button>
             </div>
             <div>
                 <h3>GFR Hydrogen Fuel-Cell Car Pitch Deck</h3>
-                <p>Design research project that studies the elements of
-                    community within online P2P marketplaces.
+                <p>Mock pitch deck for a hydrogen Fuel-Cell car. Formula SAE 2023 Michigan. 
                 </p>
-                <button id="gfrButton" onclick="unhidePopup('gfrpopup','gfrButton')">View Project</button>
+                <button id="gfrButton" onclick="unhidePopup('gfrpopup','gfrButton')";>View Project</button>
             </div>
             <div>
-                <h3>DSGN 440 Marketplace Design Research</h3>
-                    <p>Design research project that studies the elements of
-                        community within online P2P marketplaces.
+                <h3>Midjourney Artifact Presentation</h3>
+                    <p>Research project I did on the AI image creation tool, Midjourney.
                     </p>
                     <button>View Project</button>
                     
             </div>
            
             <div>
-                <h3>DSGN 343 Nike N7 Event Proposal</h3>
-                    <p>"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut l
-                        abore et dolore magna aliqua. </p>
+                <h3>Nike N7 Event Proposal</h3>
+                    <p>A proposal for Kalapuya Field Day, a community wide event in Corvallis in collaboration with Nike N7.  </p>
                         <button onclick="unhidePopup('n7popup')">View Project</button>
             </div>
             <div>

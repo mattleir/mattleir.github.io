@@ -16,7 +16,7 @@ function unhidePopup(popupId,buttonID) {
     
 }
 
-
+hidePopup('blossompopup','blosButton')
 
 /* function checkButton(popupId,buttonID) {
     var div = document.getElementById(popupId);
