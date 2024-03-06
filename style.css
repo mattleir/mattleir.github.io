@@ -303,7 +303,7 @@ tr {
     padding: 24px;
     font-size: 14px;
     border: solid #ccc 1px;
-    
+    background-color: red;
     margin: 5px;
   }
 
