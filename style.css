@@ -24,7 +24,7 @@
     width: 440px;
     background-color: rgb(231, 231, 231);
     position: absolute;
-    top: 325px; 
+    top: 650px; 
     left: 300px;
     padding: 0px 0px ;
     overflow-y: scroll;
@@ -37,19 +37,39 @@
  }
 
  #gfrpopup {
-    height: 240px;
+    height: 245px;
     width: 400px;
-    top: 600px; 
-    left: 850px;
+    top: 660px; 
+    left: 800px;
     
  }
 
  #n7popup {
     height: 245px;
     width: 400px;
-    top: 800px; 
+    top: 1300px; 
+    left: 325px;
+ }
+
+#midpopup {
+    height: 245px;
+    width: 400px;
+    top: 1000px; 
     left: 375px;
-    display: none;
+}
+
+ #mcdpopup {
+    height: 245px;
+    width: 400px;
+    top: 950px; 
+    left: 820px;
+ }
+
+ #cleanpopup {
+    height: 245px;
+    width: 400px;
+    top: 1275px; 
+    left: 800px;
  }
 
  .popupbar {
@@ -134,7 +154,7 @@ p {
 }
 
 .about {
-    font-weight: 300;
+    font-size: 13px;
     margin: 14px 0x 24px 0px;
 }
 
@@ -202,6 +222,9 @@ section {
     background-color: #f3f4f6;
 }
 
+
+
+
 #skills {
     padding: 6px;
     font-size: 12px;
@@ -214,26 +237,51 @@ section {
     color: white;
 }
 
+#kwords > li {
+    font-size: 11px;
+    border: none;
+    color: red;
+    background-color: white;
+    text-decoration: underline;
+    margin: 0px 12px 3px 0;
+    padding: 6px 0;
+}
+
 
 .projects {
-    display: flex;
+/*     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start; */
+
+    column-width: 250px;
+  column-gap: 0px;
 }
 
 .projects > div {
+    break-inside: avoid;
     box-sizing: border-box; /* Include padding and border in the total width */
     flex: 0 0 calc(50% - 20px); /* Set width to 50%, considering padding and margin */
-    padding: 15px;
+    padding: 16px 16px 20px;
     font-size: 14px;
     border: solid #ccc 1px;
     border-radius: 12px;
-    margin: 5px;
+    margin: 0 1em 1em 0;
+    height: 100%;
     
 }
 
-.projects > div > h1 {
+.projects > div > h3 {
     font-size: 16px;
+    padding: 0px 0px;
+    margin: 8px 0px;
 }
+
+.projects > div > p {
+    margin: 6px 0px 6px;
+    margin: 0px;
+}
+
+
 
 button {
     font-size: 12px;
@@ -243,25 +291,13 @@ button {
 }
 
 
-footer {
-    width: 100%;
-    height: 200px;
-    background-color: #fcfcfc ;
-    margin-top: 64px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-footer p {
-    text-align: center;
-}
 
 #artifact {
     height: 100%;
     margin: 0;
     padding: 0;
-    
+    background-color: red;
 }
 
 #sectionlabel {
@@ -293,21 +329,67 @@ tr {
 }
 
 .column {
-    width: calc(33.33% - 20px); /* 33.33% width for each column with a 20px gap */
-    float: left; /* Float elements to create columns */
-    margin-right: 24px; 
+    width: calc(33.33% - 16px); /* 33.33% width for each column with a 20px gap */
+    float: inline-start; /* Float elements to create columns */
+    /* margin-right: 24px;  */
     margin-top: 24px;
-    /* background-color: #f0f0f0; /* Background color */ 
+/*     margin: 5px;
+ */   
     padding: 20px; /* Padding inside columns */
-    box-sizing: border-box; /* Include padding in width calculation */
-    padding: 24px;
+    box-sizing: border-box; 
+    padding:  24px 32px;
     font-size: 14px;
-    border: solid #ccc 1px;
+    border-right: solid #000000 2px;
+    border-left: solid #000000 2px;
+    border-top:solid #ffffff 1px ;
+    border-bottom:solid #ffffff 1px ;
+    background-color: white;
+    height: 1000px;
+    overflow: auto;
+    
+  }
 
-    margin: 5px;
+  .column::-webkit-scrollbar {
+    display: none;
+  }
+#endcol {
+    border: solid #ffffff 1px;
   }
 
   .column > img {
-    max-width: 100%;
-    min-width: 98%;
+    max-width: 70%;
+    min-width: 70%;
+    margin: auto;
   }
+
+  .column > h1 {
+    font-size: 24px;
+  }
+
+  .column > p {
+    font-size: 13px;
+  }
+
+  .column > hr {
+    border: 1px solid black;
+
+  }
+
+  footer {
+    width: 100%;
+    height: 400px;
+    /* background-color: #ffffff ; */
+    margin-top: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-image: url("Resources/Artifacts/art12.JPG"); */
+}
+
+footer p {
+    text-align: center;
+}
+
+footer > a > img {
+    height: 52px;
+}
