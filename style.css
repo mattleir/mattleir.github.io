@@ -127,7 +127,7 @@ main {
             
 h1 {
     font-family: 'JakartaSans';
-    font-size: 28px;
+    font-size: 24px;
     margin: 12px 0px 12px 0px;
 }
 
@@ -135,11 +135,13 @@ h2 {
     font-family: 'JakartaSans';
     color: #101010;
     margin: 12px 0px;
+    font-size: 24px;
 }
 
 h3 {
     font-family: 'JakartaSans';
     color: #101010;
+    font-size: 18px;
 }
 
 h4 {
@@ -150,7 +152,7 @@ h4 {
 
 p {
     font-family: 'SpaceMono';
-    font-size: 14px;
+    font-size: 13px;
     color: #5d5d5d;
 }
 
@@ -393,4 +395,156 @@ footer p {
 
 footer > a > img {
     height: 52px;
+}
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    main {
+        width: 90%;
+        padding: 32px;
+    }
+
+    header {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    .pfp {
+        margin: 0 auto 24px auto;
+        height: 175px;
+    }
+
+    .contact {
+        justify-content: center;
+    }
+
+    .projects {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+        column-width: unset;
+    }
+
+    .projects > div {
+        margin: 0;
+        width: auto;
+        padding: 12px;
+        min-height: unset;
+        border-radius: 8px;
+        break-inside: unset;
+    }
+
+    .projects > div > h3 {
+        font-size: 13px;
+        margin: 4px 0px;
+        line-height: 1.2;
+    }
+
+    .projects > div > p {
+        font-size: 11px;
+        line-height: 1.3;
+        margin: 4px 0px 6px;
+    }
+
+    .projects > div .tags {
+        gap: 4px;
+    }
+
+    .projects > div .tags li {
+        padding: 2px 4px;
+        margin: 0;
+        font-size: 9px;
+    }
+
+    .popup {
+        width: 90%;
+        height: 80vh;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    #gfrpopup, #n7popup, #midpopup, #mcdpopup, #cleanpopup {
+        width: 90%;
+        height: 80vh;
+        left: 5%;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    /* Adjust columns for mobile */
+    .column {
+        width: 100%;
+        float: none;
+        border: none;
+        border-bottom: 2px solid #000000;
+        margin: 0;
+        padding: 24px 16px;
+        height: auto;
+    }
+
+    .column > img {
+        max-width: 100%;
+        min-width: 100%;
+    }
+
+    #endcol {
+        border-bottom: none;
+    }
+
+    /* Adjust tags for mobile */
+    .tags {
+        justify-content: flex-start;
+    }
+
+    .tags li {
+        margin: 3px;
+    }
+
+    /* Adjust video size for mobile */
+    video {
+        width: 100% !important;
+    }
+
+    /* Footer adjustments */
+    footer {
+        margin-top: 32px;
+        height: 200px;
+    }
+}
+
+/* Additional adjustments for very small screens */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h3 {
+        font-size: 16px;
+    }
+
+    p, .about {
+        font-size: 12px;
+    }
+
+    .contact > li a {
+        margin-right: 12px;
+        font-size: 14px;
+    }
+
+    .tags li {
+        font-size: 11px;
+        padding: 4px;
+    }
+
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 8px;
+    }
 }
