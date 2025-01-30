@@ -1,19 +1,23 @@
-
-  function hidePopup(popupId,buttonID) {
+function hidePopup(popupId,buttonID) {
     var div = document.getElementById(popupId);
     var button = document.getElementById(buttonID)
     div.style.display = 'none';
     button.disabled = false;
-    }
-
+}
 
 function unhidePopup(popupId,buttonID) {
     var div = document.getElementById(popupId);
     var button = document.getElementById(buttonID)
     div.style.display = '';
     button.disabled = true;
-
     
+    // Add smooth scrolling to the popup
+    setTimeout(() => {
+        div.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'center'
+        });
+    }, 100); // Small delay to ensure popup is visible first
 }
 
 hidePopup('blossompopup','blosButton')
