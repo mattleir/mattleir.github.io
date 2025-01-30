@@ -93,30 +93,27 @@
  }
 
  .closeout {
-    height: 12px;
-    width: 12px;
-    background-color: rgb(255, 88, 88);
-    border-radius: 100%;
-    margin: 4px 6px 6px ;
-    border: 0px solid;
-    display: inline-block;
-    vertical-align: middle;
-    padding: 0px;
-    font-weight: 900;
-    font-size: 8px;
-    font-family: arial;
-    color: rgb(255, 88, 88);
-    
-   
-    
- }
+    height: 24px;
+    width: 24px;
+    background-color: #ff5858;
+    border: 1px solid #ff5858;
+    border-radius: 50%;
+    margin: 8px;
+    padding: 0;
+    font-weight: 500;
+    font-size: 12px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s ease;
+}
 
- .closeout:hover {
-    color: #450000;
-    cursor: url('cursor.cur'), auto;
-
-    
- }
+.closeout:hover {
+    background-color: #666;
+    border-color: #666;
+    color: white;
+}
 
 
 main {
@@ -629,28 +626,6 @@ button:hover {
 
 button:active {
     transform: scale(0.98);
-}
-
-/* Close button styles */
-.closeout {
-    height: 24px;
-    width: 24px;
-    background-color: white;
-    border: 1px solid #ff5858;
-    border-radius: 50%;
-    margin: 8px;
-    padding: 0;
-    font-weight: 500;
-    font-size: 12px;
-    color: #ff5858;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.closeout:hover {
-    background-color: #ff5858;
-    color: white;
 }
 
 /* Project card button styles */
