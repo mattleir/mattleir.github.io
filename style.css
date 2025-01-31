@@ -40,7 +40,7 @@
  #gfrpopup {
     height: 245px;
     width: 400px;
-    top: 660px; 
+    top: 725px; 
     left: 800px;
     
  }
@@ -48,29 +48,43 @@
  #n7popup {
     height: 245px;
     width: 400px;
-    top: 1300px; 
-    left: 325px;
+    top: 1150px; 
+    left: 300px;
  }
 
 #midpopup {
     height: 245px;
     width: 400px;
-    top: 1000px; 
-    left: 375px;
+    top: 975px; 
+    left: 425px;
 }
 
  #mcdpopup {
     height: 245px;
     width: 400px;
-    top: 950px; 
-    left: 820px;
+    top: 1075px; 
+    left: 775px;
  }
 
  #cleanpopup {
     height: 245px;
     width: 400px;
-    top: 1275px; 
-    left: 800px;
+    top: 1225px; 
+    left: 725px;
+ }
+
+ #winepopup {
+    height: 245px;
+    width: 400px;
+    top: 900px; 
+    left: 650px;
+ }
+
+ #gamepopup {
+    height: 245px;
+    width: 400px;
+    top: 1000px; 
+    left: 350px;
  }
 
  .popupbar {
@@ -238,7 +252,7 @@ section {
 }
 
 #kwords > li {
-    font-size: 10px;
+    font-size: 12px;
     border: none;
     color: red;
     background-color: white;
@@ -378,11 +392,12 @@ tr {
   footer {
     width: 100%;
     height: 400px;
-    /* background-color: #ffffff ; */
+    background-color: #ffffff ;
     margin-top: 64px;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: solid #000000 2px;
     /* background-image: url("Resources/Artifacts/art12.JPG"); */
 }
 
@@ -397,7 +412,7 @@ footer > a > img {
 /* Mobile Responsive Styles */
 @media screen and (max-width: 768px) {
     main {
-        width: 90%;
+        width: 100%;
         padding: 32px;
     }
 
@@ -463,14 +478,15 @@ footer > a > img {
     }
 
     .projects > div button {
-        font-size: 10px;
-        padding: 4px 8px;
-        margin: 4px 0 0 0;
-        align-self: flex-start;
+        font-size: 11px;
+        padding: 8px 16px;
+        margin-top: 10px;
+        min-width: 100px;
+        padding-top: 8px;
     }
 
     #kwords > li {
-        font-size: 8px;
+        font-size: 10px;
         margin: 0 6px 0 0;
         padding: 2px 0;
     }
@@ -489,15 +505,15 @@ footer > a > img {
 
     /* Adjust individual popup positions for scrolling */
     #blossompopup {
-        top: 100vh;
+        top: 130vh;
     }
 
     #gfrpopup {
-        top: 120vh;
+        top: 180vh;
     }
 
     #n7popup {
-        top: 140vh;
+        top: 110vh;
     }
 
     #midpopup {
@@ -505,15 +521,23 @@ footer > a > img {
     }
 
     #mcdpopup {
-        top: 180vh;
+        top: 140vh;
     }
 
     #cleanpopup {
         top: 200vh;
     }
 
+    #winepopup {
+        top: 170vh;
+    }
+
+    #gamepopup {
+        top: 150vh;
+    }
+
     /* Update the group selector */
-    #gfrpopup, #n7popup, #midpopup, #mcdpopup, #cleanpopup {
+    #gfrpopup, #n7popup, #midpopup, #mcdpopup, #cleanpopup, #winepopup, #gamepopup {
         width: 90%;
         height: 35vh;
         left: 5%;
@@ -590,8 +614,14 @@ footer > a > img {
     }
 
     .projects {
-        grid-template-columns: 1fr;
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
+    }
+
+    .projects > div button {
+        font-size: 10px;
+        padding: 6px 12px;
+        min-width: 90px;
     }
 }
 
@@ -630,11 +660,13 @@ button:active {
 
 /* Project card button styles */
 .projects > div button {
-    font-size: 11px;
-    padding: 5px 10px;
+    font-size: 13px;
+    padding: 8px 16px;
     margin-top: 8px;
     border-color: #666;
     color: #666;
+    width: auto;
+    min-width: 120px;
 }
 
 .projects > div button:hover {
@@ -642,38 +674,21 @@ button:active {
     color: white;
 }
 
-/* Mobile styles */
+/* Mobile button styles */
 @media screen and (max-width: 768px) {
-    button {
-        font-size: 11px;
-        padding: 5px 10px;
-    }
-
-    .closeout {
-        height: 20px;
-        width: 20px;
-        font-size: 10px;
-        margin: 6px;
-    }
-
     .projects > div button {
-        font-size: 10px;
-        padding: 4px 8px;
+        font-size: 11px;
+        padding: 8px 16px;
         margin-top: auto;
+        min-width: 100px;
     }
 }
 
 /* Very small screen styles */
 @media screen and (max-width: 480px) {
-    button {
+    .projects > div button {
         font-size: 10px;
-        padding: 4px 8px;
-    }
-
-    .closeout {
-        height: 18px;
-        width: 18px;
-        font-size: 9px;
-        margin: 4px;
+        padding: 6px 12px;
+        min-width: 90px;
     }
 }
